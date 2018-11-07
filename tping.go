@@ -14,7 +14,7 @@ func main() {
 	flag.Parse()
 	address := net.JoinHostPort(*h, *p)
 	if n, err := TcpPing(address); err == nil {
-		log.Println("地址", address, "延迟", int(n/1e6), "毫秒")
+		log.Println("地址", address, "延迟", n/1e6, "毫秒")
 	} else {
 		log.Println("地址", address, "错误", err)
 	}
