@@ -1,0 +1,1 @@
+go build -o tping_windows_amd64.exe -ldflags "-s -w" tping.go
