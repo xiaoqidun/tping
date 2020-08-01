@@ -19,6 +19,7 @@ func main() {
 		log.Println("地址", address, "错误", err)
 	}
 }
+
 func TcpPing(address string) (n int64, err error) {
 	s := time.Now()
 	tcpConn, err := net.Dial("tcp", address)
